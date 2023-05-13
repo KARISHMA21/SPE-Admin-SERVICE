@@ -1,0 +1,64 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/admin_schema?useSSL=false
+    username: root
+    password: root
+    hikari:
+      initialization-fail-timeout: 0
+
+  application:
+    name: admin_end
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 8082
+  servlet:
+    context-path: /admin_end
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+cms_service:
+  base:
+    url: http://localhost:8084/cms_end
+
+admin:
+  client:
+    id: adminclient1234
+    secret: adminsecret
+
+
+patient:
+  client:
+    id: patientclient1234
+    secret: patientsecret
+
+his:
+  client:
+    id: hisclient1234
+    secret: hissecret
+
+cms:
+  client:
+    id: cmsclient1234
+    secret: cmssecret
+  email:
+    id: testaccmt2022@gmail.com
+    password: sbiehxkkvdshixub
+
+  twilio:
+    username: AC9508235a2c607c8852e810615f3f0fa0
+    password: cb263164e1c8169c6e0c7aa26d30fac4
+
+patient_service:
+  base:
+    url: http://localhost:8081/patient_end
