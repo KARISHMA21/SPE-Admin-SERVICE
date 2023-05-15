@@ -5,5 +5,5 @@ metadata:
 data:
   host : mysql-admin
   dbName: admin_schema
-  cms: http://10.111.65.205:8084
-  pat: http://10.100.126.197:8081
+  cms: http://10.98.238.82:8084
+  pat: http://10.104.173.128:8081
